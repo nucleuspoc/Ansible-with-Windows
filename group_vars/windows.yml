@@ -1,0 +1,10 @@
+# Details for the windows login
+#
+# The port: 5986 = HTTPS, 5985 = HTTP
+---
+ansible_user: USER@DOMAIN
+ansible_password: USER_PASSWORD
+ansible_port: 5986
+ansible_connection: winrm
+ansible_winrm_server_cert_validation: ignore
+ansible_winrm_transport: credssp

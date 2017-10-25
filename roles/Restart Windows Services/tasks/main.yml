@@ -1,0 +1,5 @@
+---
+- name: Restart "{{ service }}"
+  win_service:
+    name: "{{ service }}"
+    state: restarted

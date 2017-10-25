@@ -1,0 +1,7 @@
+---
+- name: Gather IP details
+  config: '{{ playbook_dir }}/config.json'
+  win_command: ipconfig
+  register: ipconfig
+
+- debug: var=ipconfig

@@ -1,0 +1,5 @@
+---
+- hosts: windows
+  connection: local
+  roles:
+    - {role: Gather Facts on Windows Hosts}
